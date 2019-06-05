@@ -1,0 +1,63 @@
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    background-color: #F16E4E;
+    color: #f2f2f2f2;
+}
+.nav a.active {
+    background-color: #F16E4E;
+    color: white;
+}
+.nav .icon {
+    display: none;
+}
+
+#title-mobile {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    #title-mobile {
+        display: block;
+    }
+    #title-desktop {
+        display: none;
+    }
+    .subtitle {
+        font-size: 1.7em;
+    }
+
+}
+  
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    p {
+        font-size: 15pt;
+    }
+}
